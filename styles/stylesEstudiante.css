@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.inscription{
+    margin-left: 7rem;
+}
+
+
