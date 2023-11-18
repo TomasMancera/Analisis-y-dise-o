@@ -21,5 +21,6 @@ form.addEventListener('submit', function (event) {
 
     localStorage.setItem('datosTutoria', JSON.stringify(datosTutorias));
     alert("Tutoría: " + nombre + " creada con éxito!");
+    location.reload()
 });
 

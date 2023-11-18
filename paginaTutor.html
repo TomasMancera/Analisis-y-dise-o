@@ -29,19 +29,9 @@
     
     <h4>Tus tutorias</h4>
 
-    <div class="row" id="coursesList">
-      <!-- Ejemplo de Curso -->
-      <div class="col-md-4 mb-4 course-card" data-title="Matemáticas">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Curso de Matemáticas</h5>
-            <p class="card-text">Tutor: Juan Pérez</p>
-            <p class="card-text">Descripción: Este curso abarca conceptos básicos de matemáticas.</p>
-            <button class="btn btn-primary enrollBtn">Editar</button>
-            <button class="btn btn-primary enrollBtn">Eliminar</button>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="coursesList">
+        <!-- Ejemplo de Curso -->
+        
 
       <!--Template de la tutoria creada-->
       <template id="mi_template">
@@ -72,10 +62,10 @@
         </div>
         <div class="modal-body">
           <form id="crearTutoriaForm">
-            <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre">
-            <input type="text" class="form-control mb-2" id="descripcion" placeholder="Descripción">
-            <input type="number" class="form-control mb-2" id="precio" placeholder="Precio">
-            <input type="text" class="form-control mb-2" id="horarios" placeholder="Horarios (separados por comas)">
+            <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre" required>
+            <input type="text" class="form-control mb-2" id="descripcion" placeholder="Descripción" required>
+            <input type="number" class="form-control mb-2" id="precio" placeholder="Precio" required>
+            <input type="text" class="form-control mb-2" id="horarios" placeholder="Horarios (separados por comas)" required>
             <div id="dropZone" class="drop-zone" onclick="triggerInputFile()">
               <span class="drop-zone__prompt">Arrastra o da Clic para subir tu contenido aqui</span>
               <input type="file" name="fileInput" id="fileInput"class="drop-zone__input">

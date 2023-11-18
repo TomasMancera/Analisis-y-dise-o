@@ -23,19 +23,12 @@
       <input type="text" class="form-control" id="searchInput" placeholder="Buscar cursos...">
     </div>
 
+    <h3 class="cursosDispo">Cursos Disponibles</h3>
+
     <!-- Listado de Cursos -->
     <div class="row" id="coursesList">
       <!-- Ejemplo de Curso -->
-      <div class="col-md-4 mb-4 course-card" data-title="Matemáticas">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Curso de Matemáticas</h5>
-            <p class="card-text">Tutor: Juan Pérez</p>
-            <p class="card-text">Descripción: Este curso abarca conceptos básicos de matemáticas.</p>
-            <button class="btn btn-primary enrollBtn" data-bs-toggle="modal" data-bs-target="#crearTutoriaModal">Inscribirse</button>
-          </div>
-        </div>
-      </div>
+      
 <!--Modal tutoria cuando le da clic a inscribirse-->
       <div class="modal fade" id="crearTutoriaModal" tabindex="-1" aria-labelledby="crearTutoriaModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -47,10 +40,10 @@
             </div>
             <div class="modal-body">
               <form id="crearTutoriaForm">
-                <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre">
-                <input type="text" class="form-control mb-2" id="descripcion" placeholder="Descripción">
-                <input type="number" class="form-control mb-2" id="precio" placeholder="Precio">
-                <input type="text" class="form-control mb-2" id="horarios" placeholder="Horarios (separados por comas)">
+                <h4 ><span id="previewNombre"></span></h4>
+                <h4 ><span id="previewDescripcion"></span></h4>
+                <h4 ><span id="previewPrecio"></span></h4>
+                <h4 ><span id="previewHorarios"></span></h4>
                 
               </form>
             </div>
@@ -62,12 +55,16 @@
       <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModal" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header text-center">
               <h5 class="modal-title" id="successModal">Se ha generado tu factura para tu tutoria</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+              <div class="d-flex flex-column justify-content-center align-items-center gap-5">
              <h3>Felicidades</h3>
+             <button type="button" class="btn btn-primary factura">Descargar Factura</button>
+             <button type="button" class="btn btn-primary mb-6 pagar">Pagar Ahora</button>
+            </div>
             </div>
           </div>
         </div>
@@ -95,7 +92,10 @@
   <!-- JavaScript de Bootstrap 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="obtenerDatosTutoria.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="alert.js"></script>
 
  
 
