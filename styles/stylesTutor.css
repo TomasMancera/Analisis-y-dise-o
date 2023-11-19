@@ -1,6 +1,5 @@
 *{
     font-family: 'Roboto', sans-serif;
-
 }
 
 .navbar-brand{
@@ -8,4 +7,14 @@
     font-weight: 500;
 }
 
+.template-container{
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 30px;
+}
 
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
