@@ -18,3 +18,17 @@
     justify-content:space-between;
     padding: 10px;
 }
+
+.img-container{
+    max-width: 15%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+}
