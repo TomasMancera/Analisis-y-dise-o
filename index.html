@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <title>LearnMate</title>
+</head>
+<body>
+
+    <!-- NAVIGATION VAR ------------------------>
+    <header>
+        <div class="img-container">
+         <div>
+           <img src="/img/logo.png" alt="">
+         </div>
+          <div>
+            <img src="/img/learnmate.png" alt="logo">
+          </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#utilities">Servicios</a></li>
+                <li><a href="login.html">Aprende Ahora</a></li>
+                <li><a href="#get-touch" class="btn-contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Main section ---------------------- -->
+
+    <main>
+        <section class="section-1">
+            <h2>Aprende o enseña de inmediato!</h2>
+            <p>Facilitamos el enlace entre estudiantes listos para aprender y tutores altamente cualificados, brindando un espacio donde el conocimiento se comparte de manera efectiva y enriquecedora.</p>
+          <div>
+              <button class="learn-more"><a href="login.html">GET STARTED</a></button>
+              <button class="learn-more"><a href="#learnMore">LEARN MORE</a></button>
+          </div>
+        </section>
+        <section class="section">
+            <img src="img/imagenPrincipal.svg" alt="coneccion-estudiantes-tutores" width="350px" height="350px">
+        </section>
+    </main>
+
+      <!-- 3 COLUMN SECTION------------------------>
+
+    <section class="utilities" id="utilities">
+        <div>
+            <span>✅</span>
+            <h3>Aprendizaje profundo</h3>
+            <p>Aprende de manera personalizada.</p>
+        </div>
+        <div class="middle-utilitie">
+            <span>📄</span>
+            <h3>Acceso inmediato</h3>
+            <p>Inscríbete o crea una tutoría y empieza de inmediato.</p>
+        </div>
+        <div>
+            <span>⭐</span>
+            <h3>Mejoramiento continuo</h3>
+            <p>Aprendizaje que mejora en todo momento.</p>
+        </div>
+    </section>
+
+    <!-- MORE INFO SECTION------------------------>
+
+    <section class="mas-info" id="learnMore">
+        <div class="prepare-section">
+            
+            <h2>Prepárate de la mejor manera!</h2>
+            <p>En la era digital, el aprendizaje en línea se ha convertido en una herramienta indispensable para el crecimiento personal y profesional. Nuestra plataforma de aprendizaje en línea ofrece una experiencia educativa única, combinando flexibilidad, accesibilidad y calidad en un solo lugar. </p>
+        </div>
+        <div class="image-prepare">
+            <img src="img/prepareSection.svg" class="image-pre" alt="preparate-mejor" width="350px" height="350px">
+        </div>
+
+    </section>
+
+    <!-- REVIEW SECTION------------------------>
+    
+    <section class="reviews">
+    <h1>Reviews</h1>
+    <div id="carouselExample" class="carousel slide" data-bs-theme="dark">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="item-1">
+            <p>"quiero compartir mi experiencia excepcional en esta plataforma de aprendizaje en línea. Desde el primer momento, me sorprendió la facilidad de navegación y la diversidad de cursos disponibles"</p>
+            <div class="d-flex justify-content-center">
+                <img src="/img/pfp1.svg" width="100px" alt="profile picture">
+            </div>
+            <h2>Silv</h2>
+          </div>
+          <div class="carousel-item">
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem at nisi recusandae non fuga deleniti! Accusantium, saepe. Voluptas, eaque tenetur culpa repellat qui in minus esse deleniti at omnis!"</p>
+            <div class="d-flex justify-content-center">
+                <img src="/img/pfp2.svg" width="100px"; alt="profile picture">
+            </div>
+            <h2>Daniela</h2>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer section------------->
+
+    <div class="form-section" id="get-touch">
+        
+           <h1>Nosotros te contactamos!</h1>      
+            <p> nos aseguramos de que siempre estés informado y apoyado. Entendemos que tu tiempo es valioso, por lo que nos esforzamos en hacer el proceso lo más sencillo y eficiente posible.</p>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos tu correo a nadie!</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
+</body>
+</html>
